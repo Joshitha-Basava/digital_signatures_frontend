@@ -1,14 +1,45 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: url('../assets/home.jpg') no-repeat center center/cover;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    background: #007bff;
-    color: white;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #007bff;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  padding-top: 20px;
+}

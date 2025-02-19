@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <h2>QR Auth</h2>
+      <h2 className="title">QR Auth</h2>
       <div>
         <Link to="/">Home</Link>
         <Link to="/upload">Upload</Link>
@@ -21,7 +21,7 @@ function Navbar() {
         {localStorage.getItem("token") ? (
             <button className="logout-btn" onClick={handleLogout}>Logout</button>
           ) : (
-            <Link to="/auth">Login</Link>
+            <button className="logout-btn" onClick={() => navigate("/auth")}>Login</button>
           )}
       </div>
     </nav>
