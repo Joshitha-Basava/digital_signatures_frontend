@@ -1,6 +1,5 @@
 /* custom-dashboard.css */
 .custom-dashboard {
-    max-width: 1200px;
     margin: 100px auto;
     padding: 20px;
     background-color: #f4f7fc;
@@ -82,6 +81,49 @@
   .custom-qr-code {
     margin-top: 20px;
   }
+
+  .custom-delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ff4d4d;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .custom-delete-btn:hover {
+    color: #cc0000;
+  }
+
+  .reset-button {
+    margin-top: 10px;
+    margin-left: 86%;
+    background-color: #ff4d4d; /* Red color for alert */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    display: inline-block;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  .reset-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+    transform: scale(1.05);
+  }
+  
+  .reset-button:active {
+    transform: scale(0.95);
+  }
+  
   
   @media (max-width: 768px) {
     .custom-dashboard h1 {
